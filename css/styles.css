@@ -1,0 +1,539 @@
+
+
+body {
+    margin: 0;
+    padding: 0;     
+}
+.navigation_bar { /*has two children, menu and intro*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative; /*edit*/
+    
+}
+.menu {
+    position: relative;
+
+
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(111, 147, 135);
+    height: 60px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    z-index: 10; 
+      
+}
+.list1 {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    list-style: none;
+    margin-left: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    
+}
+
+
+#dropdown1 {
+    position: relative;
+    z-index: 10; 
+    
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(232, 224, 224);
+    box-shadow: 0 8px 16px rgba(59, 59, 59, 0.2);
+    z-index: 20; 
+    min-width: 200px; 
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    border-radius: 5px;
+}
+.genres-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+
+.genres-list li a {
+    color: black;
+    padding: 5px 5px;
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+}
+.genres-list li a:hover {
+    background-color: #a4b2a7;
+    border-radius: 2px;
+}
+
+/* Show the dropdown when hovering over the Genres menu item */
+#dropdown1:hover .dropdown-list {
+    display: flex;
+    flex: column;
+    
+    
+}
+
+
+
+.option1 {
+    margin-right: 90px;
+    
+    
+}
+.option1 a {
+    text-decoration: none;
+    color: white;
+    
+}
+.option2 a {
+    text-decoration: none;
+    color: blanchedalmond;
+    margin-left: 70px;
+}
+.option1 a i {
+    font-size: 1.2em;
+    margin-right: 5px;
+    
+}
+
+.option1 a:hover {
+    color: pink;
+}
+.option2 a:hover {
+    color: pink;
+}
+#donatered a:hover {
+    color: red;
+}
+
+
+    
+.intro {
+    position: relative; /*this allows the slides to be positioned within the intro container*/
+    top: 0%; 
+    left: 0%;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden; /*prevent scrolling*/
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding:0;
+    z-index: 1; 
+    
+}
+.text {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(236, 231, 231);
+    font-size: 1.5rem; 
+    font-weight: bold;
+    opacity: 0; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    width: 100vw;
+    
+}
+#slide1, #slide2, #slide3 {
+    
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+#slide1 {
+    background-image: url('/images/pinkbook.jpg');
+    
+}
+#slide2 {
+    background-image: url('/images/cutebook11.jpeg');
+    
+}
+#slide3 {
+    background-image: url('/images/cutebook8.jpg');
+    
+}
+
+/*********content*********/
+
+.searchfield {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid pink;
+    padding: 5px;
+    font-size:1rem;
+    margin-right: 5px;
+    box-shadow: 10px 10px 15px rgba(204, 62, 180, 0.2);
+    /*10 px down, 10 to the right, 15px blurry, opague was the last one*/
+}
+.btn {
+    width: 80px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: plum;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 10px 10px 15px rgba(204, 62, 186, 0.2);
+}
+.btn:hover {
+    background-color: rgb(196, 75, 196);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    background-color: rgb(249, 241, 241);
+    border-radius: 20px;
+    
+    
+    
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 30px; 
+    
+
+
+}
+
+#books {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    
+
+}
+
+#books:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+    
+.star {
+    color: purple;
+}
+
+.bookinfo{
+    max-height: 200px;
+    padding: 0;
+    overflow: hidden;
+} 
+
+.video {
+    margin-left: 10px;
+    margin-top: 30px; 
+    border-radius: 10px; 
+    
+}
+.vidblog {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+.blog {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.blog h3, h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.blog a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+.blog h4 {
+    font-size: 1rem;
+}
+#blogpic {
+    height: 235px;
+    width: 600px;
+    
+}
+
+.content2 { /*parent*/
+    display: grid;
+    
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(253, 251, 251);
+    height: 300px;
+    margin-top: 40px;
+    
+    
+    
+}
+
+.nextcont { /*child1 of mom1*/
+    margin-top: 100px;
+    margin-left: 25px;
+    position: relative;
+    width: 100%;
+    height: auto; /*150*/
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.content3 {  /*child1 of mom1*/
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 100px;
+    
+}
+.content30 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+
+.quotes_next1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /*initially hidden*/
+    
+    
+    font-family: "Playwrite AU QLD Guides", serif; /*this font is from google*/
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+.quotes_next1.active {
+    opacity: 1; /*make the div visible during transition*/
+}
+
+#quotepics {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.qtitle {
+    font-size: 1rem;
+    color: black;
+    margin-left: 20px;
+    
+}
+
+
+
+.qlist {
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    
+
+}
+.ql a {
+    text-decoration: none;
+    color: rgb(169, 92, 165)
+    
+}
+.ql a:hover {
+    text-decoration: underline;
+}
+
+.next_read { /*child2 of mom1*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    align-items: start;
+   
+}
+.blog_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #eceaea;
+    margin-top: 50px;
+    box-sizing: border-box;
+    height: 745px;
+    
+  
+}
+#recpic {
+    height: 250px;
+    width: 500px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.new-user-text {
+    margin-top: 30px; /* Adjust as needed */
+    display: inline-block; /* Ensures margin works properly */
+}
+.community {
+    box-sizing: border;
+    margin-top: 70px;
+      
+}
+#appstore {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+#playstore {
+    height: 80px;
+    width: 400px;
+}
+.mobile_app {
+    border: 1px solid #eceaea;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+}
+
+
+.btn_container {
+    display: flex;
+    
+}
+.btnn {
+    height: 20px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid pink;
+    margin-right: 5px;
+    box-shadow: 10px 10px 15px rgba(204, 62, 180, 0.2);
+    cursor: pointer;
+}
+.btnn:hover {
+    background-color: rgb(213, 173, 213);
+}
+
+.rwp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.rwp h4 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: black;
+    text-align: center; 
+    padding: 20px; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px; 
+} 
+
+.r {
+    background-image: url('/images/prof_reading.jpg');
+    height: 100px;
+    width: 100px;
+}
+.w {
+    background-image: url('/images/prof_writing.jpg');
+    height: 100px;
+    width: 100px;
+}
+.p {
+    background-image: url('/images/prof_publish.jpg');
+    height: 100px;
+    width: 100px;
+}
+.footer {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    
+}
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 100px;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 300px;
+    
+}
+.footer1 h4 {
+    margin: 0;
+    margin-left: 10px;
+}
+.footer2 {
+    padding-bottom: 20px;
+}
+#email2 {
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid pink;
+    padding: 5px;
+    font-size:1rem;
+    margin-right: 5px;
+    box-shadow: 10px 10px 15px rgba(204, 62, 180, 0.2);
+}
+.bt {
+    width: 80px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: plum;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 10px 10px 15px rgba(204, 62, 186, 0.2);
+}
+.email_bt {
+    display: flex;
+}
+.end {
+    background-color:  rgb(253, 251, 251);
+}
+
+
+
+  

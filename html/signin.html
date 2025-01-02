@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #f4a2c9, #bd9cdc);
+        }
+        .sign-in {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 450px;
+            border: 0.5px solid #6b6868;
+            border-radius: 5px;
+            background-color: rgb(236, 243, 249);
+            align-items: center;
+            
+        }
+        #username, #password {
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+        }
+        .pname-c, .uname-c {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        .form-container {
+            border-bottom: 2px solid #6b6868;
+            padding-bottom: 15px;
+        }
+        .bttn {
+            margin-top: 15px;
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: #bd9cdc;
+            border: none;
+            box-shadow: 5px 5px 15px rgb(49, 52, 54);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgb(42, 39, 39);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="sign-in">
+            <h3>WHATAREAD</h3>
+            <div class="form-container">
+                <form action="POST">
+                    <div class="uname-c">
+                        <h4>Username</h4>
+                        <input type="text" name="username" placeholder="Enter your username" id="username">
+                    </div><!--uname-c-->
+                    
+                    <div class="pname-c">
+                        <h4>Password</h4>
+                        <input type="text" name="password" id="password" placeholder="Enter your password">
+                    </div><!--pname-c-->
+                    
+                </form>
+                <button class="bttn">sign in</button>
+            </div><!--form-container-->
+            <p>New to whataread? <a href="/html/signup.html">sign up</a></p>
+            <p style="margin-left: 10px;">By continuing, you agree to whataread's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a>.</p>
+        </div><!--sign-in-->
+    </div><!--main-container-->
+    
+</body>
+</html>
