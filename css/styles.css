@@ -159,15 +159,15 @@ body {
     height: 100%;
 }
 #slide1 {
-    background-image: url('/images/pinkbook.jpg');
+    background-image: url('images/pinkbook.jpg'); 
     
 }
 #slide2 {
-    background-image: url('/images/cutebook11.jpeg');
+    background-image: url('images/cutebook11.jpeg');
     
 }
 #slide3 {
-    background-image: url('/images/cutebook8.jpg');
+    background-image: url('images/cutebook8.jpg');
     
 }
 
