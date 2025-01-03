@@ -92,9 +92,11 @@ body {
 
 
 .option1 {
+    margin-right: 90px;  
+}
+.option1g {
+    color: white;
     margin-right: 90px;
-    
-    
 }
 .option1 a {
     text-decoration: none;
@@ -104,7 +106,7 @@ body {
 .option2 a {
     text-decoration: none;
     color: blanchedalmond;
-    margin-left: 70px;
+    margin-left: 40px;
 }
 .option1 a i {
     font-size: 1.2em;
@@ -200,6 +202,8 @@ input {
     border-radius: 5px;
     color: white;
     box-shadow: 10px 10px 15px rgba(204, 62, 186, 0.2);
+    cursor: pointer;
+
 }
 .btn:hover {
     background-color: rgb(196, 75, 196);
@@ -222,9 +226,14 @@ input {
     justify-content: center;
     margin-left: 50px;
     margin-top: 30px; 
-    
+    max-height: fit-content;
+}
+#photos-link:hover {
+    color: rgb(112, 85, 140);
+}
 
-
+#photos-link:hover {
+    color: rgb(26, 13, 39);
 }
 
 #books {
@@ -245,8 +254,8 @@ input {
 }
 
 .bookinfo{
-    max-height: 200px;
-    padding: 0;
+    max-height: 300px;
+    padding-bottom: 20px;
     overflow: hidden;
 } 
 
@@ -297,7 +306,7 @@ input {
 
 .nextcont { /*child1 of mom1*/
     margin-top: 100px;
-    margin-left: 25px;
+    margin-left:25px;
     position: relative;
     width: 100%;
     height: auto; /*150*/
@@ -308,7 +317,7 @@ input {
 .content3 {  /*child1 of mom1*/
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    margin-left: 40px;
     margin-top: 100px;
     
 }
